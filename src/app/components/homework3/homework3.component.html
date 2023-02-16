@@ -1,0 +1,11 @@
+<header>
+  <h2>Homework 3</h2>
+  <h1>Homework portal</h1>
+  <button routerLink="/">Home</button>
+</header>
+<hr />
+<div class="container" #container (scroll)="scroled()">
+  <div class="user-div" *ngFor="let person of peopleToShow">
+    <p>{{ person.firstName }} {{ person.lastName }}: {{ person.age }}</p>
+  </div>
+</div>
